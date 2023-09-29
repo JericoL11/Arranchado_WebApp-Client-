@@ -1,0 +1,251 @@
+﻿@page
+@model Arranchado_WebApp.Pages.MyPages.HomeModel
+@{
+ 
+    <div class="container mb-5">
+        <div class="row row-cols-lg-1">
+
+            <p class="display-6 fw-bold text-capitalize text-warning d-inline ">Search Product</p>
+            <form>
+                <input id="find" class="search-bar box-shadow" type="text" placeholder="Search" onkeyup="search()" />
+            </form>
+           </div>
+    </div>
+        <div id="Product-List" class="text-center">
+        <div class="container mt-5 ">
+ 
+                <div class="row row row-cols-xl-3 row-cols-lg-3 row-cols-md-2 gap-3 justify-content-center">
+           
+                <div class="ui-card">
+                    <img src="~/images/movies/Avatar.jpg" class="img-fluid image-size p-3 image-search ">
+                    <div class="description">
+                        <h3>AVATAR</h3>
+                        <p class="p-2">
+                            Jake Sully and Ney'tiri have formed a family and are doing everything to stay together. 
+                            However, they must leave their home and explore the regions of Pandora. When an ancient 
+                            threat resurfaces, Jake must fight a difficult war against the humans.
+                        </p>
+                        <a href="#">Watch Now</a>
+                    </div>
+                </div>
+                    <div class="ui-card">
+                        <img src="~/images/movies/Cinderella.jpg" class="img-fluid image-size p-3 image-search ">
+                        <div class="description">
+                            <h3>CINDERELLA</h3>
+                        <p>After her father unexpectedly dies, young Ella (Lily James) finds herself 
+                        at the mercy of her cruel stepmother (Cate Blanchett) 
+                        and stepsisters, who reduce her to scullery maid..</p>
+                        <a href="#">Watch Now</a>
+                        </div>
+                    </div>
+                    <div class="ui-card">
+                        <img src="~/images/movies/Dora.jpg" class="img-fluid image-size p-3 image-search ">
+                        <div class="description">
+                            <h3>DORA</h3>
+                        <p>Having spent most of her life exploring the jungle,
+                        nothing could prepare Dora for her most dangerous adventure yet high school. </p>
+                        <a href="#">Watch Now</a>
+                        </div>
+                    </div>
+                    <div class="ui-card">
+                        <img src="~/images/movies/Elemental.jpg" class="img-fluid image-size p-3 image-search ">
+                        <div class="description">
+                            <h3>ELEMENTAL</h3>
+                        <p>In a city where fire, water, land, and air residents live 
+                        together, a fiery young  woman and a go-with-the-flow guy discover
+                        something elemental: how much they actually have in common.</p>
+                            <a href="#">Watch Now</a>
+                        </div>
+                    </div>
+                    <div class="ui-card">
+                        <img src="~/images/movies/ENCANTO.jpg" class="img-fluid image-size p-3 image-search ">
+                     
+                        <div class="description">
+                            <h3>ENCANTO</h3>
+                        <p>The Madrigals are an extraordinary family who live hidden in the mountains 
+                        of Colombia in a charmed place called the Encanto. </p>
+                        <a href="#">Watch Now</a>
+                        </div>
+                    </div>
+                     <div class="ui-card border-3">
+                    <img src="~/images/movies/Little Mermaid.jpg" class="img-fluid image-size p-3 image-search ">
+                    <div class="description">
+                        <h3 class="text">LITTLE MERMAID</h3>
+                        <p>The youngest of King Triton's daughters, Ariel is a beautiful and spirited young mermaid with a thirst for adventure.
+                        Longing to find out more about the world beyond the sea,</p>
+                        <a href="#">Watch Now</a>
+                    </div>
+                </div>
+                 <div class="ui-card">
+                    <img src="~/images/movies/Luca.jpg" class="img-fluid image-size p-3 image-search ">
+                    <div class="description">
+                        <h3>LUCA</h3>
+                        <p>Set in a beautiful seaside town on the Italian Riviera, the original animated feature is a coming-of-age story
+                        about one young boy experiencing an unforgettable summer filled with gelato, pasta and endless scooter rides.</p>
+                        <a href="#">Watch Now</a>
+                    </div>
+                </div>
+                    <div class="ui-card">
+                        <img src="~/images/movies/One Piece.jpg" class="img-fluid image-size p-3 image-search ">
+                        <div class="description">
+                            <h3>ONE PIECE</h3>
+                        <p>Monkey D. Luffy wants to become the King of all pirates. Along his quest he meets: a skilled swordsman named Roronoa Zolo; 
+                        Nami, a greedy thief who has a knack for navigation</p>
+                        <a href="#">Watch Now</a>
+                        </div>
+                    </div>
+                    <div class="ui-card">
+                        <img src="~/images/movies/HeartOfStone.jpg" class="img-fluid image-size p-3 image-search ">
+                        <div class="description">
+                            <h3>HEART OF STONE</h3>
+                        <p>Rachel Stone is an intelligence operative, the only woman who stands between her powerful global peacekeeping organization 
+                        and the loss of its most valuable and dangerous asset.</p>
+                        <a href="#">Watch Now</a>
+                        </div>
+                    </div>
+                    <div class="ui-card">
+                        <img src="~/images/movies/megs.jpg" class="img-fluid image-size p-3 image-search ">
+                        <div class="description">
+                            <h3>MEGS</h3>
+                        <p>Jonas Taylor leads a research team on an exploratory dive into the deepest depths of the ocean. 
+                        Their voyage spirals into chaos when a malevolent mining operation 
+                        threatens their mission and forces them into a high-stakes battle for survival</p>
+                        <a href="#">Watch Now</a>
+                        </div>
+                    </div>
+                   
+                     <div class="ui-card">
+                        <img src="~/images/movies/Peaky Blinders.jpg" class="img-fluid image-size p-3 image-search ">
+                        <div class="description">
+                            <h3>HIDDEN STRIKE</h3>
+                        <p>\Two former soldiers face nonstop danger as they travel along one of the most dangerous roads in the world.</p>
+                        <a href="#">Watch Now</a>
+                        </div>
+                    </div>
+                     <div class="ui-card">
+                        <img src="~/images/movies/Open.jpg" class="img-fluid image-size p-3 image-search ">
+                        <div class="description">
+                            <h3>open</h3>
+                        <p>When a couple begin to feel that their relationship has gone stale, they explore the idea of an open relationship.</p>
+                            <a href="#">Watch Now</a>
+                        </div>
+                    </div>
+
+
+                    <!--PREVOUS CARDS
+              
+                   
+                    <div class="card-body card-body-search border-3 ">
+                        <img src="~/images/movies/Avatar.jpg" class="img-fluid image-size px-2 image-search " />
+               
+                            <h3>Avatar</h3>
+                       </div>
+
+
+                    <div class="card-body border-3 r">
+                            <div class="image-area">
+                            <img src="~/images/movies/Cinderella.jpg" class="img-fluid image-size px-2 image-search " />
+                                <div class="image-text">
+                                    <h3>Cinderella</h3>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    <div class="card-body card-body-search border-3 ">
+                            <div class="image-area">
+                            <img src="~/images/movies/Dora.jpg" class="img-fluid image-size px-2 image-search " />
+                                <div class="image-text">
+                                    <h3>Dora</h3>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="card-body border-3 card-body-search ">
+                            <div class="image-area">
+                            <img src="~/images/movies/One Piece.jpg" class="img-fluid image-size px-2 image-search " />
+                                <div class="image-text">
+                                    <h3>One Piece</h3>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="card-body border-3 card-body-search">
+                            <div class="image-area">
+                            <img src="~/images/movies/Elemental.jpg" class="image-size px-2 image-search " />
+                                <div class="image-text">
+                                    <h3>Elemental</h3>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="card-body border-3 card-body-search">
+                            <div class="image-area">
+                            <img src="~/images/movies/ENCANTO.jpg" class="img-fluid image-size px-2 image-search"  />
+                                <div class="image-text">
+                                    <h3>Encanto</h3>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="card-body border-3 card-body-search">
+                            <div class="image-area">
+                            <img src="~/images/movies/Little Mermaid.jpg" class="img-fluid image-size px-2 image-search " />
+                                <div class="image-text">
+                                    <h3>Little Mermaid</h3>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="card-body border-3 card-body-search">
+                            <div class="image-area">
+                            <img src="~/images/movies/Luca.jpg" class="img-fluid image-size px-2 image-search " />
+                                <div class="image-text">
+                                    <h3>Luca</h3>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="card-body border-3 card-body-search">
+                            <div class="image-area">
+                            <img src="~/images/movies/megs.jpg" class="img-fluid image-size px-2 image-search " />
+                                <div class="image-text">
+                                    <h3>MEG2</h3>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="card-body border-3 card-body-search">
+                            <div class="image-area">
+                            <img src="~/images/movies/Open.jpg" class="img-fluid image-size px-2 image-search " />
+                                <div class="image-text">
+                                    <h3>Open</h3>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="card-body border-3 card-body-search">
+                            <div class="image-area">
+                            <img src="~/images/movies/Extraction2.jpg" class="img-fluid image-size px-2 image-search " />
+                                <div class="image-text">
+                                    <h3>Extraction 2</h3>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="card-body border-3 card-body-search">
+                            <div class="image-area">
+                            <img src="~/images/movies/Peaky Blinders.jpg" class="img-fluid image-size px-2 image-search " />
+                                <div class="image-text">
+                                    <h3>Hidden Strike</h3>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>-->
+                </div>
+            </div>
+        </div>
+
+} 
