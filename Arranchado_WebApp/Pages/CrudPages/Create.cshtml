@@ -1,0 +1,61 @@
+﻿@page
+@model Arranchado_WebApp.Pages.CrudPages.CreateModel
+
+@{
+    Layout = "_LayoutCrud";
+    ViewData["Title"] = "Create";
+}
+<body class="Crud_Background">
+<h1>Create</h1>
+
+<h4>ClassModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ClassModel.FirstName" class="control-label"></label>
+                <input asp-for="ClassModel.FirstName" class="form-control" />
+                <span asp-validation-for="ClassModel.FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ClassModel.LastName" class="control-label"></label>
+                <input asp-for="ClassModel.LastName" class="form-control" />
+                <span asp-validation-for="ClassModel.LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ClassModel.Username" class="control-label"></label>
+                <input asp-for="ClassModel.Username" class="form-control" />
+                <span asp-validation-for="ClassModel.Username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ClassModel.Password" class="control-label"></label>
+                <input asp-for="ClassModel.Password" class="form-control" />
+                <span asp-validation-for="ClassModel.Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ClassModel.confirm_Password" class="control-label"></label>
+                <input asp-for="ClassModel.confirm_Password" class="form-control" />
+                <span asp-validation-for="ClassModel.confirm_Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ClassModel.BirthDate" class="control-label"></label>
+                <input asp-for="ClassModel.BirthDate" class="form-control" />
+                <span asp-validation-for="ClassModel.BirthDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+    </body>

@@ -1,7 +1,12 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Arranchado_WebApp.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<Arranchado_WebAppContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Arranchado_WebAppContext") ?? throw new InvalidOperationException("Connection string 'Arranchado_WebAppContext' not found.")));
 
 var app = builder.Build();
 

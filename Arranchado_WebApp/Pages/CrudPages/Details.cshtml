@@ -1,0 +1,58 @@
+﻿@page
+@model Arranchado_WebApp.Pages.CrudPages.DetailsModel
+
+@{
+    Layout = "_LayoutCrud";
+
+    ViewData["Title"] = "Details";
+}
+<body class="Crud_Background">
+<h1>Details</h1>
+
+<div>
+    <h4>ClassModel</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ClassModel.FirstName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ClassModel.FirstName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ClassModel.LastName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ClassModel.LastName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ClassModel.Username)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ClassModel.Username)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ClassModel.Password)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ClassModel.Password)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ClassModel.confirm_Password)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ClassModel.confirm_Password)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ClassModel.BirthDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ClassModel.BirthDate)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.ClassModel?.id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
+</body>

@@ -1,0 +1,49 @@
+﻿@page
+@model Arranchado_WebApp.Pages.SignUpModel
+@{
+    Layout = "_Layout";
+
+}
+
+<h1 class="text-white fw-bold mt-5">Create your Account</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group mb-3">
+                <label asp-for="ClassModel.FirstName" class="control-label text-white"></label>
+                <input asp-for="ClassModel.FirstName" class="form-control" />
+                <span asp-validation-for="ClassModel.FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="ClassModel.LastName" class="control-label text-white"></label>
+                <input asp-for="ClassModel.LastName" class="form-control" />
+                <span asp-validation-for="ClassModel.LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="ClassModel.Username" class="control-label text-white"></label>
+                <input asp-for="ClassModel.Username" class="form-control" />
+                <span asp-validation-for="ClassModel.Username" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="ClassModel.Password" class="control-label text-white"></label>
+                <input asp-for="ClassModel.Password" class="form-control" />
+                <span asp-validation-for="ClassModel.Password" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="ClassModel.confirm_Password" class="control-label text-white"></label>
+                <input asp-for="ClassModel.confirm_Password" class="form-control" />
+                <span asp-validation-for="ClassModel.confirm_Password" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="ClassModel.BirthDate" class="control-label text-white"></label>
+                <input asp-for="ClassModel.BirthDate" class="form-control" />
+                <span asp-validation-for="ClassModel.BirthDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Sign up" class="btn btn-primary mt-2" />
+            </div>
+        </form>
+    </div>
+</div>
